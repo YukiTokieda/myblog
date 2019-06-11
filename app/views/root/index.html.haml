@@ -1,0 +1,132 @@
+%header
+  %p.site-subtitle Web　Engineer’s　Portfolio
+  %h1.site-title　Yuki Tokieda
+  %p.site-description Chack out some my works
+  .header-bottons
+    = link_to 'ABOUT ME','#about', class: "botton"
+    = link_to 'SEND MESSAGE','#contact', class: "botton"
+    = link_to 'MY BLOG',articles_path, class: "botton"
+
+%section#about.about
+  %h2.heading About Me
+  %p.about-text
+    初めまして。駆け出しのWebエンジニアをしています。
+    %br
+    大学経営学部卒業後、大手証券会社に就職し、
+    %br
+    IT業界に転職する為に、プログラミングの勉強中です。
+  %p.about-text
+    このサイトは、勉強のアウトプット用に作ったポートフォリオサイトです。
+    %br
+    使用言語は　haml・SCSS・javascript・Ruby・rails・AWS です。
+    %br
+    現在は　Python・Reactを勉強しています。
+  %p.sns
+    Follow Me!!
+  .sns-links
+    = link_to 'https://twitter.com/shumi7127', class: "link" do
+      = fa_icon 'twitter-square'
+      Twitter
+    = link_to 'https://www.instagram.com/programan_tokki/', class: "link" do
+      = fa_icon 'instagram'
+      Instagram
+    = link_to 'https://github.com/YukiTokieda', class: "link" do
+      = fa_icon 'github'
+      Github
+
+%section.works
+  %h2.heading My Works
+  .works-wrapper
+    .work-box
+      %img.work-image{src: '/pictweet.jpg',alt: "製作事例1"}
+      .work-description
+        .work-description_inner
+          %p.work-text
+            pictweet
+            %br
+            ツイッター簡易版
+            %br
+            = link_to 'LEARN MORE','/pictweet.jpg', class: "work-link"
+
+    .work-box
+      %img.work-image{src: '/chat-space.png',alt: "製作事例2"}
+      .work-description
+        .work-description_inner
+          %p.work-text
+            chat-space
+            %br
+            チャットアプリ
+            %br
+            = link_to 'LEARN MORE','/chat-space.png', class: "work-link"
+
+    .work-box
+      %img.work-image{src: '/メルカリ.jpg',alt: "製作事例3"}
+      .work-description
+        .work-description_inner
+          %p.work-text
+            メルカリコピーサイト
+            %br
+            name: TE50c
+            pass: 5050
+            %br
+            = link_to 'http://52.192.27.154/', class: "work-link" do
+              LEARN MORE
+
+    .work-box
+      %img.work-image{src: '/portfolio.jpg',alt: "製作事例4"}
+      .work-description
+        .work-description_inner
+          %p.work-text
+            my portfolio
+            %br
+            ポートフォリオ
+            %br
+            = link_to 'LEARN MORE','', class: "work-link"
+
+%section.skills
+  %h2.heading My Skills
+  .skill-wrapper
+
+    .skill-box
+      .skill-icon
+        = fa_icon 'code'
+      .skill-box_title Code
+      %p.skill-box_text
+        バックエンド
+        %br
+        Ruby on Rails
+        %br
+        Python勉強中です。
+
+    .skill-box
+      .skill-icon
+        = fa_icon 'paint-brush'
+      .skill-box_title Design
+      %p.skill-box_text
+        フロントデザイン
+        %br
+        haml scss jQuery
+        %br
+        React勉強中です。
+
+    .skill-box
+      .skill-icon
+        = fa_icon 'briefcase'
+      .skill-box_title Works
+      %p.skill-box_text
+        フリーランスとしても活動中
+        %br
+        HP製作やアプリ製作など
+        %br
+        詳しくはDMで！！
+
+%section#contact.contact
+  %h2.heading Contact
+  %form.contact-form
+    %input{type: "text",name: "name",placeholder: "NAME" ,class:"contact-name"}
+    %input{type: "email",name: "email",placeholder: "MAIL",class:"contact-mail"}
+    %textarea{name:"massage",placeholder: "MESSAGE",class:"contact-message"}
+    %input{type: "submit",value: "SEND",class:"contact-send"}
+%fotter.footer
+  %p.footer-text 
+    @my portfolio 2019
