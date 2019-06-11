@@ -346,3 +346,354 @@
     background:linear-gradient(135deg, $black 0%, $white 70%) no-repeat;
   }
 }
+@media(max-width: 768px){
+  .about{
+    padding: 40px 30px;
+    background-color: $white;
+    color: #333;
+    height: 732px;
+    .heading{
+      position: relative;
+      display: inline-block;
+      margin: 30px 0 15px;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+      &:before{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+        bottom: 5px;
+      }
+      &:after{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+      }
+    }
+    .about-text{
+      margin: 15px 0 15px;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .sns{
+      position: relative;
+      display: inline-block;
+      margin: 15px 0;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+      &:before{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+        bottom: 5px;
+      }
+      &:after{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+      }
+    }
+    .sns-links{
+      .link{
+        display: inline-block;
+        width: 200px;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #00bfff;
+        opacity: 0.8;
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1.2rem bold;
+        margin: 15px;
+        &:hover{
+          opacity: 1;
+        }
+        &:nth-child(2){
+          background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+          color: $black;
+        }
+        &:nth-child(3){
+          background-color: purple;
+        }
+      }
+    }
+  }
+  .works{
+    height: 652px;
+    width: 100%;
+    // background-color: #383634;
+    padding: 80px 0;
+  
+    .heading{
+      position: relative;
+      display: inline-block;
+      margin: 30px 0 15px;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+  
+      &:before{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+        bottom: 5px;
+      }
+      &:after{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+      }
+    }
+    .works-wrapper{
+      // display: table;
+      width: 100%;
+      margin-top: 60px;
+      table-layout: fixed;
+  
+      .work-box{
+        position: relative;
+        // display: table-cell;
+        display: block;
+        border: 1px solid  $white;
+  
+        &:after{
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          background: no-repeat;
+          background-size: 100% 100%;
+          opacity: 0.3;
+          transform: scaleY(-1);
+        }
+        &:nth-child(1):after{
+          background: url('/building.jpg') no-repeat;
+          background-size: 100% 100%;
+        }
+        &:nth-child(2):after{
+          background: url('/tree.jpg') no-repeat;
+          background-size: 100% 100%;
+        }
+        &:nth-child(3):after{
+          background: url('/lake.jpg') no-repeat;
+          background-size: 100% 100%;
+        }
+        &:nth-child(4):after{
+          background: url('/sky.jpg') no-repeat;
+          background-size: 100% 100%;
+        }
+        .work-image{
+            display: none;
+            width: 100%;
+            height: 180px;
+            margin: 0 0 72%;
+        }
+        .work-description{
+          position: relative;
+          top: 50%;
+          left: 0;
+          height: 50%;
+          width: 100%;
+          z-index: 1;
+  
+          &_inner{
+            display: table;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+  
+            .work-text{
+              display: table-cell;
+              vertical-align: middle;
+              font-size: 1.4rem;
+              line-height: 2;
+         
+              .work-link{
+                margin-top: 10px;
+                border: 1px solid $white;
+                background-color: rgba(255, 255, 255, 0.15);
+                display: inline-block;
+                width: 200px;
+                padding: 10px;
+                border-radius: 4px;
+                color: $white;
+                text-decoration: none;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .skills{
+    padding: 90px 0;
+    background-color: $white;
+    color: $black;
+    height: 632px;
+    .heading{
+      position: relative;
+      display: inline-block;
+      margin: 30px 0 15px;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+  
+      &:before{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+        bottom: 5px;
+      }
+      &:after{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+      }
+    }
+    .skill-wrapper{
+      display: table;
+      width: 90%;
+      margin: 50px auto 0;
+      table-layout: fixed;
+      .skill-box{
+        display: table-cell;
+        .skill-icon{
+          width: 90px;
+          height: 90px;
+          margin:30px auto 30px;
+          border: 4px solid;
+          border-radius: 50%;
+          color: #f1b400;
+          font-size: 5rem;
+          line-height: 90px;
+          text-align: center;
+        }
+        &_title{
+          margin: 30px 20px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        &_text{
+          margin: 25px 10px;
+          font-size: 15px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+  .contact{
+    padding:102px 0;
+    background-color: $black;
+  
+    .heading{
+      position: relative;
+      display: inline-block;
+      margin: 30px 0 ;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+  
+      &:before{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+        bottom: 5px;
+      }
+      &:after{
+        content: '';
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #999;
+      }
+    }
+    .contact-form{
+      width: 50%;
+      margin: 50px auto 0;
+      .contact-name{
+        display: block;
+        width: 95%;
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: $white;
+      }
+      .contact-mail{
+        display: block;
+        width: 95%;
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: $white;
+      }
+      .contact-message{
+        display: block;
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: $white;
+        height: 150px;
+      }
+      .contact-send{
+        display: block;
+        width: 200px;
+        margin: 40px auto 0;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+      }
+    }
+  }
+  .footer{
+  
+    .footer-text{
+      padding: 12px 0;
+      background:linear-gradient(135deg, $black 0%, $white 70%) no-repeat;
+    }
+  }
+}

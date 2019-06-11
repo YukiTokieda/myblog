@@ -62,3 +62,70 @@ header{
     }
   }
 }
+@media(max-width: 768px){
+  header{
+    padding: 120px 30px 80px;
+    background: url('/new-york-city.jpg') ;
+    background-size: cover;
+    height: 612px;
+  
+    .site-subtitle{
+      margin: 0 0 30px;
+      letter-spacing: 1px;
+      font-size: 1.7rem;
+    &:before{
+      content:'';
+      display: inline-block;
+      width: 90%;
+      height: 2px;
+      margin: 10px auto;
+      background-color: $white;
+      vertical-align: middle
+    }
+    &:after{
+      content:'';
+      display: inline-block;
+      width: 90%;
+      height: 2px;
+      margin: 10px auto;
+      background-color: $white;
+      vertical-align: middle
+    }
+    }
+    .site-title{
+      margin: 50px 0 40px;
+      font-size: 7.6rem;
+
+    }
+    .site-description{
+      margin-bottom: 40px;
+      color:#888;
+      font-size: 1.6rem;
+    }
+    .header-bottons{
+      .botton{
+        display: inline-block;
+        width: 200px;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: blue;
+        opacity: 0.8;
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        margin: 5px;
+        &:hover{
+          opacity: 1;
+        }
+        &:nth-child(2){
+          background-color: yellow;
+          color: $black;
+        }
+        &:nth-child(3){
+          background-color: red;
+        }
+      }
+    }
+  }
+}
