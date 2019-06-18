@@ -71,3 +71,5 @@ gem 'erb2haml'
 gem 'font-awesome-rails'
 # biding.pry
 gem 'pry-rails'
+# ユーザー機能
+gem 'devise'
