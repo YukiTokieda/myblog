@@ -1,8 +1,9 @@
 .about{
   padding: 80px 30px;
+  box-sizing: border-box;
+  height: 100vh;
   background-color: $white;
   color: #333;
-  height: 630px;
   .heading{
     position: relative;
     display: inline-block;
@@ -85,7 +86,8 @@
   }
 }
 .works{
-  height: 630px;
+  box-sizing: border-box;
+  height: 100vh;
   width: 100%;
   // background-color: #383634;
   padding: 80px 0;
@@ -203,7 +205,8 @@
   padding: 80px 0;
   background-color: $white;
   color: $black;
-  height: 630px;
+  box-sizing: border-box;
+  height: 100vh;
   .heading{
     position: relative;
     display: inline-block;
@@ -264,7 +267,8 @@
 .contact{
   padding:80px 0 90px;
   background-color: $black;
-
+  box-sizing: border-box;
+  height: 95vh;
   .heading{
     position: relative;
     display: inline-block;
@@ -351,7 +355,8 @@
     padding: 40px 30px;
     background-color: $white;
     color: #333;
-    height: 732px;
+    box-sizing: border-box;
+    height: 100vh;
     .heading{
       position: relative;
       display: inline-block;
@@ -434,7 +439,8 @@
     }
   }
   .works{
-    height: 652px;
+    box-sizing: border-box;
+    height: 100vh;
     width: 100%;
     // background-color: #383634;
     padding: 80px 0;
@@ -553,7 +559,8 @@
     padding: 90px 0;
     background-color: $white;
     color: $black;
-    height: 632px;
+    box-sizing: border-box;
+    height: 100vh;
     .heading{
       position: relative;
       display: inline-block;
