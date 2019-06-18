@@ -4,4 +4,20 @@
 .wrapper{
  background-color: $white;
  color: $black;
+  .header{
+    border: solid #008080;
+    background: url('/me.jpg') ;
+    background-size: cover;
+    height: 25vh;
+  }
+  .articles-side{
+    width: 25vw;
+    height: 100vh;
+    float: left;
+  }
+  .articles-main{
+    width: calc(100% - 25vw);
+    height: 100vh;
+    float: right;
+  }
 }
