@@ -1,0 +1,11 @@
+.articles-header{
+  background:linear-gradient( 150deg, rgba(0, 0, 255, 0.4), rgba(255, 255, 255, 0.6), rgba(255, 0, 0, 0.4)),url('/iam.jpg') ;
+  background-size: cover;
+  height: 220px;
+  &_title{
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 50px;
+  }
+}

@@ -48,7 +48,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
+# 自動デプロイ
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'
@@ -73,3 +73,5 @@ gem 'font-awesome-rails'
 gem 'pry-rails'
 # ユーザー機能
 gem 'devise'
+# bootstrap
+gem 'bootstrap', '~> 4.1.1'
